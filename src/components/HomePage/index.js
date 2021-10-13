@@ -5,7 +5,7 @@ import content from "./content";
 export const HomePage = () => {
     return (
         <div>
-            
+            Work in progress...
         </div>
     )
 };
