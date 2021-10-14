@@ -29,7 +29,7 @@ export const cardArray = [
         ]
     },
     {
-        title: "CodeCenter Related",
+        title: "Code Related",
         contentStyle: "ul",
         contentArray: [
             "(Strongest) JavaScript, Node, Express, React, Sass/CSS",
