@@ -1,11 +1,42 @@
+@import "../../css/common.styles.css";
 
+/* Component Parent Container */
 .navBarContainer {
     position: fixed;
     display: flex;
     justify-content: space-between;
+    width: 100%;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 10%;
-    padding: 1em;
+    background: var(--hopkins-light-blue);
+    font-size: var(--font-size-large);
+    font-weight: bolder;
+    z-index: 1000;
+}
+
+/* Left Child */
+.profileContentContainer {
+    display: flex;
+}
+.profileContentContainer * {
+    margin-left: 15px;
+}
+
+/* Right Child */
+.navLinksContainer {
+    display: flex;
+    align-items: center;
+
+}
+.navLinksContainer .navLinks {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+    color: var(--main-0);
+    border-radius: 15px 15px 0 0;
+}
+.navLinksContainer .navLinks.active {
+    background: var(--main-1);
+    opacity: 1;
 }

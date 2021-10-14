@@ -1,13 +1,14 @@
-export const bio = {
-    name: "Eugene Kim",
-    dob: "06/20/1985",
-    sex: "male",
-    location: "Oakton, VA"
-};
+export const bio = [
+    "Eugene Kim",
+    "06/20/1985",
+    "Male",
+    "Oakton, VA"
+];
 
 export const links = [
     "Home",
-    "Projects",
-    "Code",
-    "Extracurricular"
+    "Code Center",
+    "Career",
+    "Extracurricular",
+    "Contact"
 ];

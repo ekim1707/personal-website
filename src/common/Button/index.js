@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon } from '../Icon';
+import { IconComponent } from '../Icon';
 
 export const Button = ({
     className,
@@ -12,10 +12,10 @@ export const Button = ({
 }) => {
     switch (true) {
         case isIcon:
-            return <Icon role="button" onClick={onClick} className={className} iconName={iconName} />;
+            return <IconComponent role="button" onClick={onClick} className={className} ComponentIconComponentName={iconName} />;
         case iconClassName:
             return <button className={className} onClick={onClick} disabled={disabled}>
-                <Icon className={iconClassName} iconName={iconName}/> 
+                <IconComponent className={iconClassName} iconName={iconName}/> 
                 {buttonText}
             </button>;
         default:

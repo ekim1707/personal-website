@@ -1,0 +1,14 @@
+@import "../../css/common.styles.css";
+
+.codingContainer {
+    padding: 10px;
+    white-space: pre-wrap;
+}
+
+.codingContentContainer {
+    display: flex;
+    width: 100%;
+}
+.codingContentContainer div {
+    width: 50%;
+}

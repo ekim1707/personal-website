@@ -6,6 +6,7 @@ export const Tabs = ({
     className,
     tabs,
     selectedIndex,
+    tabClassName,
     onTabChange,
     iconClassName,
     isIcon,
@@ -15,10 +16,10 @@ export const Tabs = ({
 }) => {
     return <div className={className}>
         {tabs.map((tabName, i) => {
-            return links ? <NavLink exact to={tabName === "HOME" ? "/" : `/${tabName.toLowerCase()}`} className="navLinks" key={i}>
+            return links ? <NavLink exact to={tabName === "Home" ? "/" : `/${tabName.toLowerCase().split(' ').join('')}`} className={tabClassName} key={i}>
                 {tabName}
             </NavLink> : <Button
-                className={i === selectedIndex ? "tabContainer selected" : "tabContainer"}
+                className={i === selectedIndex ? `${tabClassName} selected` : tabClassName}
                 onClick={() => onTabChange(i)}
                 iconClassName={iconClassName}
                 buttonText={tabName}
