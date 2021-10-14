@@ -10,15 +10,13 @@ export const NavBar = () => {
     return (
         <div className="navBarContainer">
             <div className="profileContentContainer">
-                <p>{bio.name}</p>
-                <p>{bio.dob}</p>
-                <p>{bio.sex}</p>
-                <p>{bio.location}</p>
+                {bio.map((val, i) => <p key={i}>{val}</p>)}
             </div>
             <Tabs 
                 className="navLinksContainer"
                 tabs={links}
                 selectedIndex={selectedIndex}
+                tabClassName="navLinks"
                 onTabChange={(index) => onTabChange(index)}
                 links={true}
             />

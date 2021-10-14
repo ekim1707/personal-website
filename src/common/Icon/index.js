@@ -1,12 +1,21 @@
 import React from 'react';
 
-export const Icon = ({
+export const IconComponent = ({
     className,
     iconName,
-    role
+    role,
+    href,
+    width,
+    height
 }) => {
     const style = {
-        background: `url("../../img/${iconName}.png") contain no repeat`
+        width: width,
+        height: height,
+        background: `url("../../img/${iconName}.png") 0% 0% / contain no-repeat`,
+        backgroundSize: "cover"
     };
-    return <div role={role ? role : ""} className={className} style={style}></div>
+    return href ? <a href={href} target="_blank" rel="noreferrer">
+        <div role={role ? role : ""} className={className} style={style}></div>
+    </a> :
+    <div role={role ? role : ""} className={className} style={style}></div>
 };

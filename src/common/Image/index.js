@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Image = ({
+export const ImageComponent = ({
     title,
     className,
     alt,
@@ -10,7 +10,7 @@ export const Image = ({
     return (
         <React.Fragment>
             <img 
-                src={`../../${title}`} 
+                src={`${process.env.PUBLIC_URL}/img/${title}.png`} 
                 className={className} 
                 alt={alt} 
                 width={width} 
