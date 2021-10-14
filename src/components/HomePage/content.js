@@ -24,7 +24,7 @@ export const cardArray = [
             "Gilman High School (former recipient of William S. Thomas Prize)",
             "Boston College",
             "University of Maryland Baltimore County (BA in Biology)",
-            "DigitalCrafts FullStack Immersive CodeCenter Bootcamp (2019)",
+            "DigitalCrafts FullStack Immersive Coding Bootcamp (2019)",
             "Johns Hopkins University (2020 - present)"
         ]
     },
