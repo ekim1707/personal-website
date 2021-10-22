@@ -2,35 +2,50 @@ import React from 'react';
 
 export const Card = ({
     title,
-    width,
-    height,
+    cardStyles,
     labelColor,
     contentStyle,
     contentArray
 }) => {
-    const cardStyles = {
+
+    const defaultCardStyles = {
         background: "white",
-        border: "3px solid gray",
+        border: "3px solid lightgray",
         borderRadius: "15px",
         boxShadow: "0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-        width: width,
-        height: height,
+        width: "400px",
+        height: "400px",
         margin: "10px 10px 0 0",
         fontSize: "18px"
     }
     switch(contentStyle) {
         case "p":
-            return <div style={cardStyles}>
+            return <div style={{...defaultCardStyles, ...cardStyles}}>
                 <h4 style={{ color: labelColor }}>{title}</h4>
-                {contentArray.map((val, i) => <p key={i}>{val}</p>)}
+                {contentArray.map(({
+                    content,
+                    href
+                }, i) => href ? <a href={href} target="_blank" rel="noreferrer" key={i}>
+                    <p>{content}</p>
+                </a> : <p key={i}>
+                    {content}
+                </p>
+                )}
             </div>
         case "ul":
-            return <ul style={{...cardStyles, paddingTop: "5px", paddingBottom: "5px"}}>
+            return <ul style={{...defaultCardStyles, ...cardStyles}}>
                 <h4 style={{ color: labelColor }}>{title}</h4>
-                {contentArray.map((val, i) => <li style={{ padding: "5px 0" }} key={i}>{val}</li>)}
+                {contentArray.map(({
+                    content,
+                    href
+                }, i) => href ? <a href={href} target="_blank" rel="noreferrer" key={i}>
+                    <li style={{ padding: "5px 0" }}>{content}</li>
+                </a> : <li style={{ padding: "5px 0" }} key={i}>
+                    {content}
+                </li>)}
             </ul>
         case "img":
-            return <div style={{...cardStyles, background: `url("../../img/${contentArray[4]}.png") ${contentArray[2]} ${contentArray[3]} / cover no-repeat`}}>
+            return <div style={{...defaultCardStyles, ...cardStyles, background: `url("../../img/${contentArray[2]}.png") ${contentArray[0]} ${contentArray[1]} / cover no-repeat`}}>
             </div>
         default:
             return ""

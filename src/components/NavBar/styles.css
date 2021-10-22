@@ -8,7 +8,7 @@
     width: 100%;
     left: 0;
     top: 0;
-    background: var(--hopkins-light-blue);
+    background: var(--hopkins-light-blue-low-opacity);
     font-size: var(--font-size-large);
     font-weight: bolder;
     z-index: 1000;
@@ -16,23 +16,23 @@
 
 /* Left Child */
 .profileContentContainer {
-    display: flex;
+    display: flex; 
+    align-items: center;
 }
-.profileContentContainer * {
-    margin-left: 15px;
+.bioContainer * {
+    margin: 5px 15px;
 }
 
 /* Right Child */
 .navLinksContainer {
     display: flex;
     align-items: center;
-
 }
 .navLinksContainer .navLinks {
     display: flex;
     align-items: center;
     height: 100%;
-    padding: 0 20px;
+    padding: 0 3.5em;
     color: var(--main-0);
     border-radius: 15px 15px 0 0;
 }

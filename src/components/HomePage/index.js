@@ -9,15 +9,18 @@ export const HomePage = () => {
             {cardArray.map(({
                 title,
                 contentStyle,
-                contentArray,
-                flippable
+                contentArray
             }, i) => <Card
                 title={title}
-                width={i === 0 ? "200px" : i === 1 ? "calc(100% - 400px)" : "400px"}
-                height={i === 0 ? "200px": i === 1 ? "200px" : "400px"}
+                cardStyles={{
+                    width: "400px",
+                    height: "400px",
+                    paddingRight: "5px",
+                    paddingTop: "5px",
+                    paddingBottom: "5px"
+                }}
                 contentStyle={contentStyle}
                 contentArray={contentArray}
-                flippable={flippable}
                 key={i}
             />)}
         </div>

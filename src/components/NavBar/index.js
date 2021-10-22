@@ -1,7 +1,8 @@
 import React from 'react';
 import "./styles.css";
-import { bio, links } from "./content";
+import { card, bio, links } from "./content";
 import { Tabs } from '../../common/Tabs';
+import { Card } from '../../common/Card';
 
 export const NavBar = () => {
     const [selectedIndex, setSelectedIndex] = React.useState(0);
@@ -10,7 +11,13 @@ export const NavBar = () => {
     return (
         <div className="navBarContainer">
             <div className="profileContentContainer">
-                {bio.map((val, i) => <p key={i}>{val}</p>)}
+                <Card
+                    title={card.title}
+                    cardStyles={card.cardStyles}
+                    contentStyle={card.contentStyle}
+                    contentArray={card.contentArray}
+                />
+                <div className="bioContainer">{bio.map((val, i) => <div key={i}>{val}</div>)}</div>
             </div>
             <Tabs 
                 className="navLinksContainer"

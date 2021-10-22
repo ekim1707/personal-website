@@ -5,17 +5,17 @@ export const IconComponent = ({
     iconName,
     role,
     href,
-    width,
-    height
+    iconStyles,
+    onClick
 }) => {
-    const style = {
-        width: width,
-        height: height,
+    const defaultStyles = {
+        width: "25px",
+        height: "25px",
         background: `url("../../img/${iconName}.png") 0% 0% / contain no-repeat`,
         backgroundSize: "cover"
     };
     return href ? <a href={href} target="_blank" rel="noreferrer">
-        <div role={role ? role : ""} className={className} style={style}></div>
+        <div role={role ? role : ""} className={className} style={{...defaultStyles, ...iconStyles}}></div>
     </a> :
-    <div role={role ? role : ""} className={className} style={style}></div>
+    <div role={role ? role : ""} onClick={onClick} className={className} style={{...defaultStyles, ...iconStyles}}></div>
 };

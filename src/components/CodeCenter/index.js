@@ -1,37 +1,49 @@
 import React from 'react';
 import "./styles.css";
-import content from "./content";
+import { content, leetcodeContent } from "./content";
 import { Card } from '../../common/Card';
 
 export const CodeCenter = () => {
-
+    const {
+        descriptionLabel,
+        solutionLabel,
+        cardLabel,
+        cardLabelColor,
+        cardContentStyle
+    } = content;
     return <div className="codingContainer">
-        <a href={"https://leetcode.com/problems/valid-parentheses/"} target="_blank" rel="noreferrer">
-            <h3>{content.problem}</h3>
-        </a>
-        <div className="codingContentContainer">
-            <div>
-                <h4>{content.descriptionLabel}</h4>
-                <p>{content.description}</p>
+        {leetcodeContent.map(({
+            problem,
+            href,
+            description,
+            solution,
+            cardContentArray
+        }, i) => <div style={{ position: "relative" }} key={i}>
+            <a href={`https://leetcode.com/problems/${href}/`} target="_blank" rel="noreferrer">
+                <h3>{problem}</h3>
+            </a>
+            <div className="codingContentContainer">
+                <div>
+                    <h4>{descriptionLabel}</h4>
+                    <p>{description}</p>
+                </div>
+                <div>
+                    <h4>{solutionLabel}</h4>
+                    <p>{solution}</p>
+                </div>
             </div>
-            <div>
-                <h4>{content.solutionLabel}</h4>
-                <p>{content.solution}</p>
-            </div>
-        </div>
-        <div style={{
-            position: 'fixed',
-            right: "100px",
-            top: "100px"
-        }}>
             <Card 
-                    title={content.card.title}
-                    width={content.card.width}
-                    height={content.card.height}
-                    labelColor={content.card.labelColor}
-                    contentStyle={content.card.contentStyle}
-                    contentArray={content.card.contentArray}
+                    title={cardLabel}
+                    cardStyles={{
+                        position: "absolute",
+                        right: "50px",
+                        top: "50px"
+                    }}
+                    labelColor={cardLabelColor}
+                    contentStyle={cardContentStyle}
+                    contentArray={cardContentArray}
             />
         </div>
+        )}
     </div>
 }
