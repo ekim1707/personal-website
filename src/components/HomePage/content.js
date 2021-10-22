@@ -12,7 +12,7 @@ export const cardArray = [
         title: "Career",
         contentStyle: "ul",
         contentArray: [
-            { content: "Fullstack Developer on Citizen Identity GPS SGO team at Deloitte, Arlington, VA (current)" },
+            { content: "Fullstack Developer on GPS Citizen Identity SGO team at Deloitte, Arlington, VA (current)" },
             { content: "Backend/Database Engineer on Digital Retail Supply Chain RAD team at T-Mobile, Atlanta, GA" },
             { content: "Contract Frontend Engineer at AT&T Cricket, Atlanta, GA" },
             { content: "React Intern at HearBK, Atlanta, GA" }
