@@ -1,0 +1,142 @@
+@import "../../css/common.styles.css";
+
+.contactContainer {
+    color: var(--main-2);
+}
+
+.contactFormHeader {
+    max-width: 70%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    margin: 10px auto 18px auto;
+    padding: 20px;
+    background: var(--main-1);
+    box-shadow: #00000029 0px 1px 6px;
+    text-align: left;
+}
+
+.headerInputRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputContainer {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 23%;
+    padding-top: 20px;
+}
+
+.inputField {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+    height: 45px;
+    font-size: var(--font-size-normal);
+    border-top: 2px solid var(--main-4);
+    border-bottom: 2px solid var(--main-4);
+}
+
+.inputField:focus {
+    border-top: 2px solid var(--hopkins-light-blue);
+    border-bottom: 2px solid var(--hopkins-light-blue);
+}
+
+.inputContainer label {
+    position: absolute;
+    top: 0;
+    color: var(--main-4);
+    font-size: var(--font-size-normal);
+}
+
+.inputField:focus + label {
+    color: var(--hopkins-light-blue);
+}
+
+#inquiry_type:hover {
+    cursor: pointer;
+}
+
+.selectList {
+    position: absolute;
+    width: 230px;
+    right: 0;
+    top: 60px;
+    padding: 0 10px;
+    background: var(--main-4);
+    color: var(--main-1);
+    list-style: none;
+    z-index: 1000;
+    transition: color .5s;
+}
+
+.selectList li {
+    padding: 10px;
+}
+.selectList li:hover {
+    cursor: pointer;
+    color: var(--hopkins-light-blue);
+    transition: color .5s;
+}
+
+.textAreaContainer {
+    position: relative;
+    padding-top: 28px;
+}
+
+.textAreaContainer .textArea {
+    width: 100%;
+    height: 40vh;
+    padding: 20px 0;
+    font-size: var(--font-size-normal);
+    border-top: 2px solid var(--main-4);
+    border-bottom: 2px solid var(--main-4);
+}
+
+.textAreaContainer .textArea:focus {
+    border-top: 2px solid var(--hopkins-light-blue);
+    border-bottom: 2px solid var(--hopkins-light-blue);
+}
+
+.textAreaContainer label {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    color: var(--main-4);
+    font-size: var(--font-size-normal);
+}
+
+.textArea:focus + label {
+    color: var(--hopkins-light-blue);
+}
+
+.buttonContainer {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+.submitButton {
+    width: 20em;
+    height: 3em;
+    margin-top: 5px;
+    background: var(--hopkins-light-blue);
+    color: var(--main-1);
+    font-size: var(--font-size-normal);
+    border: none;
+    outline: none;
+    letter-spacing: 1.4px;
+}
+.submitButton:hover {
+    cursor: pointer;
+}
+.submitButton:disabled {
+    opacity: 0.55; 
+    cursor: not-allowed;
+}

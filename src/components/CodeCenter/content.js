@@ -58,7 +58,7 @@ export const leetcodeContent = [
         };
         `,
         cardContentArray: [
-            { content: "Time Complexity: O(n log n) for the sortedArray, O(n) for the for loop" }
+            { content: "Time Complexity: O(n log n) for the sort function, O(n) for the for loop, O(n) overall" }
         ]
     },
     {
@@ -139,7 +139,7 @@ export const leetcodeContent = [
         };
         `,
         cardContentArray: [
-            { content: "Time Complexity: at worst, O(n^2) for the switch statement inside of the for loop" }
+            { content: "Time Complexity: at worst, O(n^2) because of the switch statement inside of the for loop" }
         ]
     },
 ]

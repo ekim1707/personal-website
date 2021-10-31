@@ -7,8 +7,12 @@
 
 .codingContentContainer {
     display: flex;
-    width: 100%;
+    width: 80%;
+    padding: 10px 20px;
+    background: var(--main-1);
+    border: 1px solid lightgray;
+    border-radius: 15px;
 }
 .codingContentContainer div {
-    width: 40%;
+    width: 50%;
 }

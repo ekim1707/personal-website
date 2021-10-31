@@ -33,12 +33,12 @@ export const cardArray = [
         title: "Education",
         contentStyle: "ul",
         contentArray: [
-            { content: "Johns Hopkins University, Baltimore, MD (MS in Biotechnology, currently attending)" },
+            { content: "Johns Hopkins University, Baltimore, MD (MS in Biotechnology, currently attending, GPA: 3.5)" },
             {
                 content: "DigitalCrafts FullStack Immersive Coding Bootcamp (Summer 2019)",
                 href: "https://www.linkedin.com/school/digitalcrafts/"
             },
-            { content: "University of Maryland Baltimore County, Baltimore, MD (BA in Biology)" },
+            { content: "University of Maryland Baltimore County, Baltimore, MD (BA in Biology, GPA: 3.296)" },
             { content: "Howard Community College, Columbia, MD" },
             { content: "Boston College, Chestnut Hill, MA" },
             {

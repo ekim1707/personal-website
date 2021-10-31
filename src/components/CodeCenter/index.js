@@ -20,7 +20,7 @@ export const CodeCenter = () => {
             cardContentArray
         }, i) => <div style={{ position: "relative" }} key={i}>
             <a href={`https://leetcode.com/problems/${href}/`} target="_blank" rel="noreferrer">
-                <h3>{problem}</h3>
+                <h3 style={{ color: "black" }}>{problem}</h3>
             </a>
             <div className="codingContentContainer">
                 <div>
@@ -36,7 +36,9 @@ export const CodeCenter = () => {
                     title={cardLabel}
                     cardStyles={{
                         position: "absolute",
-                        right: "50px",
+                        width: "300px",
+                        height: "300px",
+                        right: "25px",
                         top: "50px"
                     }}
                     labelColor={cardLabelColor}

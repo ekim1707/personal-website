@@ -10,7 +10,7 @@ export const Card = ({
 
     const defaultCardStyles = {
         background: "white",
-        border: "3px solid lightgray",
+        border: "1px solid lightgray",
         borderRadius: "15px",
         boxShadow: "0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
         width: "400px",
@@ -39,8 +39,8 @@ export const Card = ({
                     content,
                     href
                 }, i) => href ? <a href={href} target="_blank" rel="noreferrer" key={i}>
-                    <li style={{ padding: "5px 0" }}>{content}</li>
-                </a> : <li style={{ padding: "5px 0" }} key={i}>
+                    <li style={{ padding: "0 5px 0 0" }}>{content}</li>
+                </a> : <li style={{ padding: "0 5px 0 0" }} key={i}>
                     {content}
                 </li>)}
             </ul>

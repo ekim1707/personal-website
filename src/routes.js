@@ -6,7 +6,10 @@ import { CodeCenter } from "./components/CodeCenter";
 import { NavBar } from './components/NavBar';
 import { ExternalLinks } from "./components/ExternalLinks";
 import { resources } from "./environment/resources";
+import { AboutMe } from './components/AboutMe';
+import { Contact } from './components/Contact';
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
     const [isOpen, setIsOpen] = React.useState(true);
     const DefaultComponent = () => <div style={{ 
@@ -21,8 +24,8 @@ export default () => {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-                        padding: "4em",
-                        fontSize: "2em"
+                        padding: "2em",
+                        fontSize: "1.5em"
                     }}
                     popUpsContentClassName="siteDisclaimerPopUpsContent"
                     popUpsContent={`Please note: This website was not intended to be responsive. 
@@ -36,7 +39,9 @@ export default () => {
                 <Switch>
                     <Route exact path={ resources.routes.basePath } component={ HomePage } />
                     <Route exact path={ resources.routes.codingPath } component={ CodeCenter } />
+                    <Route exact path={ resources.routes.aboutMePath } component={ AboutMe } />
+                    <Route exact path={ resources.routes.contactPath } component={ Contact } />
                     <Route component={DefaultComponent} />
                 </Switch>
             </Router>;
-}
+};

@@ -10,8 +10,10 @@ export const ExternalLinks = () => {
         flexFlow: "row nowrap",
         bottom: "1em",
         right: "1em",
-        background: "#68ace580",
+        background: "white",
+        border: "1px solid lightgray",
         borderRadius: "15px",
+        boxShadow: "0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
         zIndex: 1000,
     }
     return <div style={containerStyles}>

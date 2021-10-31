@@ -12,7 +12,7 @@ export const card = {
         "60%", 
         "profile"
     ]
-}
+};
 
 export const bio = [
     "Eugene Kim",
@@ -23,6 +23,6 @@ export const bio = [
 export const links = [
     "Home",
     "Code Center",
-    "Extracurricular",
+    "About Me",
     "Contact"
 ];
