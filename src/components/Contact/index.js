@@ -53,7 +53,7 @@ export const Contact = () => {
                     first_name: "",
                     last_name: "",
                     email: "",
-                    inquiry_type: "Property Purchase or Sale Information Request",
+                    inquiry_type: "Job Recruiting/Opportunity",
                     inquiry: ""
                 });
                 window.alert("Message sent successfully!");

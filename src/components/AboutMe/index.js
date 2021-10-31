@@ -6,7 +6,7 @@ import { Card } from '../../common/Card';
 export const AboutMe = () => {
     return (
         <div className="aboutMeContainer">
-            <h1 style={{ padding: "0 25px" }}>{header}</h1>
+            <h2 style={{ padding: "0 25px" }}>{header}</h2>
             <div style={{ display: "flex", justifyContent: "space-evenly" }}>
                 {cardArray.map(({
                     title,
