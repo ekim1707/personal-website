@@ -53,7 +53,8 @@ export const leetcodeContent = [
         }
         `,
         cardContentArray: [
-            { content: `Every new brushstroke comes when the next array height is greater than the one before it, and the number of new brushstrokes is equal to the next array height minus the previous array height. Time Complexity: O(n) for the for loop.` }
+            { content: `Every new brushstroke comes when the next array height is greater than the one before it, and the number of new brushstrokes is equal to the next array height minus the previous array height.` },
+            { content: `Time Complexity: O(n) for the for loop.` }
         ]
     },
     {
@@ -90,7 +91,8 @@ export const leetcodeContent = [
         }
         `,
         cardContentArray: [
-            { content: `The largest sibling (number) for every family of N will always be the largest single-digit integers comprising it arranged in order of greatest to least and then concatenated. Time Complexity: at worst, O(n log n) for the sort function.` }
+            { content: `The largest sibling (number) for every family of N will always be the largest single-digit integers comprising it arranged in order of greatest to least and then concatenated.` },
+            { contnt: `Time Complexity: at worst, O(n log n) for the sort function.` }
         ]
     },
     {
