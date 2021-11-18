@@ -92,7 +92,7 @@ export const leetcodeContent = [
         `,
         cardContentArray: [
             { content: `The largest sibling (number) for every family of N will always be the largest single-digit integers comprising it arranged in order of greatest to least and then concatenated.` },
-            { contnt: `Time Complexity: at worst, O(n log n) for the sort function.` }
+            { content: `Time Complexity: at worst, O(n log n) for the sort function.` }
         ]
     },
     {
