@@ -20,7 +20,7 @@ export const cardArray = [
             { content: "Past favorite sports to follow/watch: (in order) baseball, ice hockey, football, basketball, soccer"},
             { content: "I've been a huge sports fan my entire life, and at one point when I was younger, I was a stat-junkie who probably knew almost every single meaningful statistic for every single starting player in MLB. My dream job was always to become a general manager in MLB, but of course that never happened."},
             { content: 'My favorite sports movie of all-time is "Field of Dreams" and my favorite sports book is "Shoeless Joe"' },
-            { content: "Favorite professional athlete of all-time: Chipper Jones" },
+            { content: `Favorite professional athletes of all-time: Jason Williams ("White Boy") and Chipper Jones` },
             { content: "Professional athlete I love watching the most currently: Lionel Messi"}
         ]
     },
