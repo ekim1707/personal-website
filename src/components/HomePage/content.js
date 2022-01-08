@@ -1,33 +1,33 @@
 export const cardArray = [
     {
+        title: "Introduction",
+        contentStyle: "p",
+        contentArray: [
+            { content: `Hi, I'm Eugene. 
+            I'm a Frontend Engineer with Fullstack experience currently working at Deloitte. 
+            I have around 
+            ${new window.Date(Date.now()).getFullYear() - new window.Date(2019,12,26).getFullYear()} 
+            years of professional software engineering experience so far.
+            Thanks for visiting my webpage and please navigate to the Contact section if you'd like to leave me a message.` }
+        ]
+    },
+    {
         title: "Coding Skills",
         contentStyle: "ul",
         contentArray: [
-            { content: "(Strongest) JavaScript, Node, Express, React, Sass/CSS" },
-            { content: "Java, Spring, MySQL, Oracle, PostgreSQL, Python, Shellscript" },
-            { content: "Current Wishlist: Golang, C++" }
+            { content: "Primary: JavaScript, Node, Express, React, Sass/CSS" },
+            { content: "Secondary: MySQL, Oracle, PostgreSQL, Java, Spring, Python, Shellscript" },
         ]
     },
     {
         title: "Career",
         contentStyle: "ul",
         contentArray: [
-            { content: "Lead Senior Solution Engineer on GPS Citizen Identity SGO team at Deloitte, Arlington, VA (Aug 2021 - present)" },
-            { content: "Manager/Frontend Developer on GPS IOWA SGO team at Deloitte, Arlington, VA (Dec 2021 - present)" },
-            { content: "Backend/Database Engineer on Digital Retail Supply Chain RAD team at T-Mobile, Atlanta, GA" },
-            { content: "Contract Frontend Engineer at AT&T Cricket, Atlanta, GA" },
-            { content: "React Intern at HearBK, Atlanta, GA" }
-        ]
-    },
-    {
-        title: "Certifications",
-        contentStyle: "ul",
-        contentArray: [
-            {
-                content: "AWS Certified Cloud Practitioner (Aug 2021 - Aug 2024)",
-                href: "https://www.credly.com/badges/844fbeef-7a43-4954-b001-4a05ea4a4d36?source=linked_in_profile"
-            },
-            { content: "Currently studying for: AWS Certified Developer Associate, CompTIA A+, Certified Public Accountant (state of Virginia)" }
+            { content: "Lead Senior Fullstack Engineer on GPS Citizen Identity SGO team at Deloitte (Aug 2021 - present)" },
+            { content: "Senior Frontend Engineer on GPS IOWA SGO team at Deloitte (Dec 2021 - present)" },
+            { content: "Backend/Database Engineer on Digital Retail Supply Chain RAD team at T-Mobile" },
+            { content: "Contract Frontend Engineer at AT&T Cricket" },
+            { content: "React Intern at HearBK" }
         ]
     },
     {
@@ -45,7 +45,7 @@ export const cardArray = [
             {
                 content: "Gilman High School, Baltimore, MD (former recipient of William S. Thomas Prize)",
                 href: "https://en.wikipedia.org/wiki/Gilman_School#Awards",
-            },
+            }
         ]
     },
     {
@@ -54,7 +54,6 @@ export const cardArray = [
         contentArray: [
             { content: "Sigma Alpha Lambda National Leadership and Honors Organization (UMBC)" },
             { content: "Golden Key International Honors Society (UMBC)"},
-            { content: "Phi Theta Kappa Honors Society (HCC)" },
             { content: "SATs (May 2002): 800 Math (perfect score), 630 English, 1430 overall" }
         ]
     }

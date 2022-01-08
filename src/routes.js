@@ -4,7 +4,6 @@ import { PopUps } from './common/PopUps';
 import { HomePage } from "./components/HomePage";
 import { CodeCenter } from "./components/CodeCenter";
 import { NavBar } from './components/NavBar';
-import { ExternalLinks } from "./components/ExternalLinks";
 import { resources } from "./environment/resources";
 import { AboutMe } from './components/AboutMe';
 import { Contact } from './components/Contact';
@@ -35,11 +34,10 @@ export default () => {
                     onClick={() => setIsOpen(false)}
                 />}
                 <NavBar />
-                <ExternalLinks />
                 <Switch>
                     <Route exact path={ resources.routes.basePath } component={ HomePage } />
                     <Route exact path={ resources.routes.codingPath } component={ CodeCenter } />
-                    <Route exact path={ resources.routes.aboutMePath } component={ AboutMe } />
+                    {/* <Route exact path={ resources.routes.aboutMePath } component={ AboutMe } /> */}
                     <Route exact path={ resources.routes.contactPath } component={ Contact } />
                     <Route component={DefaultComponent} />
                 </Switch>

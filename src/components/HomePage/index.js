@@ -12,7 +12,14 @@ export const HomePage = () => {
                 contentArray
             }, i) => <Card
                 title={title}
-                cardStyles={{
+                cardStyles={contentStyle === "p" ? {
+                    width: "400px",
+                    height: "400px",
+                    paddingLeft: "20px",
+                    paddingRight: "20px",
+                    paddingTop: "5px",
+                    paddingBottom: "5px"
+                } : {
                     width: "400px",
                     height: "400px",
                     paddingRight: "5px",

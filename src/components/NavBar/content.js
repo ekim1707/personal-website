@@ -23,6 +23,6 @@ export const bio = [
 export const links = [
     "Home",
     "Code Center",
-    "About Me",
+    // "About Me",
     "Contact"
 ];

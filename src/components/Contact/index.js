@@ -6,6 +6,7 @@ import { resources } from "../../environment/resources";
 import { InputField } from '../../common/InputField';
 import { TextArea } from "../../common/TextArea";
 import { Button } from '../../common/Button';
+import { ExternalLinks } from "../ExternalLinks"; 
 
 export const Contact = () => {
     const [formData, setFormData] = React.useReducer(
@@ -97,6 +98,7 @@ export const Contact = () => {
 
     return (
         <div onClick={selectIsOpen ? () => setSelectIsOpen(false) : ""} className="contactContainer">
+            <ExternalLinks />
             <h2 className="contactFormHeader">{content.HEADER}</h2>
             <form className="formContainer">
                 <div className="headerInputRow">

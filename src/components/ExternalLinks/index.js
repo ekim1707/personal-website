@@ -5,16 +5,13 @@ import { IconComponent } from '../../common/Icon';
 
 export const ExternalLinks = () => {
     const containerStyles = {
-        position: "fixed",
         display: "flex",
         flexFlow: "row nowrap",
-        bottom: "1em",
-        right: "1em",
+        width: "fit-content ",
+        margin: "auto", 
         background: "white",
-        border: "1px solid lightgray",
-        borderRadius: "15px",
-        boxShadow: "0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-        zIndex: 1000,
+        boxShadow: "#00000029 0px 1px 6px",
+        borderRadius: "15px"
     }
     return <div style={containerStyles}>
         {content.map(({
