@@ -11,7 +11,7 @@ export const TextArea = ({
   iconName,
   disabled,
   type,
-  style
+  style,
 }) => {
   let componentStyle = style;
   if (hasIcon) {
@@ -24,7 +24,7 @@ export const TextArea = ({
     };
   }
   return (
-    <textarea 
+    <textarea
       rows={rows}
       id={id}
       className={className}

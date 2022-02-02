@@ -13,19 +13,19 @@ export const InputField = ({
   disabled,
   type,
   accept,
-  style
+  style,
 }) => {
   let componentStyle = style;
   if (hasIcon) {
     switch (iconPosition) {
-      case "right": 
-      componentStyle = {
+      case "right":
+        componentStyle = {
           ...componentStyle,
           background: `url('../../img/${iconName}.png') no-repeat`,
           backgroundSize: "27px 27px",
           backgroundPosition: "100% 50%",
-          paddingRight: "30px"
-        }
+          paddingRight: "30px",
+        };
         break;
       default: {
         componentStyle = {
@@ -33,8 +33,8 @@ export const InputField = ({
           background: `url('../../img/${iconName}.png') no-repeat`,
           backgroundSize: "27px 27px",
           backgroundPosition: "8px 16px",
-          paddingLeft: "30px"
-        }
+          paddingLeft: "30px",
+        };
         break;
       }
     }

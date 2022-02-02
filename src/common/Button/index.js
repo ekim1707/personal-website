@@ -1,27 +1,49 @@
-import React from 'react';
-import { IconComponent } from '../Icon';
+import React from "react";
+import { IconComponent } from "../Icon";
 
 export const Button = ({
-    className,
-    iconClassName,
-    onClick,
-    buttonText,
-    isIcon,
-    iconName,
-    disabled,
-    buttonStyles
+  className,
+  iconClassName,
+  onClick,
+  buttonText,
+  isIcon,
+  iconName,
+  disabled,
+  buttonStyles,
 }) => {
-    switch (true) {
-        case isIcon:
-            return <IconComponent role="button" onClick={onClick} className={className} iconName={iconName} iconStyles={buttonStyles} />;
-        case iconClassName:
-            return <button className={className} onClick={onClick} style={buttonStyles} disabled={disabled}>
-                <IconComponent className={iconClassName} iconName={iconName}/> 
-                {buttonText}
-            </button>;
-        default:
-            return <button className={className} onClick={onClick} style={buttonStyles} disabled={disabled}>
-                {buttonText}
-            </button>
-    }
+  switch (true) {
+    case isIcon:
+      return (
+        <IconComponent
+          role="button"
+          onClick={onClick}
+          className={className}
+          iconName={iconName}
+          iconStyles={buttonStyles}
+        />
+      );
+    case iconClassName:
+      return (
+        <button
+          className={className}
+          onClick={onClick}
+          style={buttonStyles}
+          disabled={disabled}
+        >
+          <IconComponent className={iconClassName} iconName={iconName} />
+          {buttonText}
+        </button>
+      );
+    default:
+      return (
+        <button
+          className={className}
+          onClick={onClick}
+          style={buttonStyles}
+          disabled={disabled}
+        >
+          {buttonText}
+        </button>
+      );
+  }
 };

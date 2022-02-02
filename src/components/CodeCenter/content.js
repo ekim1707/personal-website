@@ -1,16 +1,16 @@
 export const content = {
-    descriptionLabel: "Description:",
-    solutionLabel: "Solution:",
-    cardLabel: "Discussion:",
-    cardLabelColor: "black",
-    cardContentStyle: "ul",
+  descriptionLabel: "Description:",
+  solutionLabel: "Solution:",
+  cardLabel: "Discussion:",
+  cardLabelColor: "black",
+  cardContentStyle: "ul",
 };
 
 export const leetcodeContent = [
-    {
-        problem: "Paint a Skyline",
-        href: "maximum-units-on-a-truck",
-        description: `
+  {
+    problem: "Paint a Skyline",
+    href: "maximum-units-on-a-truck",
+    description: `
         Paint a skyline on a wall
         Rectangular building arranged in a line
         Buildings are same width but may have diff heights
@@ -29,7 +29,7 @@ export const leetcodeContent = [
         N is integer within range [1..100,000]
         Each element of array A is integer within range [1..1,000,000,000]
         `,
-        solution: `
+    solution: `
         function solution(A) {
             // write your code in JavaScript (Node.js 8.9.4)
         
@@ -52,15 +52,17 @@ export const leetcodeContent = [
             return runningCount;
         }
         `,
-        cardContentArray: [
-            { content: `Every new brushstroke comes when the next array height is greater than the one before it, and the number of new brushstrokes is equal to the next array height minus the previous array height.` },
-            { content: `Time Complexity: O(n) for the for loop.` }
-        ]
-    },
-    {
-        problem: "Find Greatest Integer Sibling (Easy)",
-        href: "",
-        description: `
+    cardContentArray: [
+      {
+        content: `Every new brushstroke comes when the next array height is greater than the one before it, and the number of new brushstrokes is equal to the next array height minus the previous array height.`,
+      },
+      { content: `Time Complexity: O(n) for the for loop.` },
+    ],
+  },
+  {
+    problem: "Find Greatest Integer Sibling (Easy)",
+    href: "",
+    description: `
         Two non-negative integers are called siblings if they are obtained from rearranging the digits of their decimal representations: e.g. 123 and 213
         A set consisting of non-negative integer N and all siblings is called family of N: e.g. family of 553 comporises of 355, 535, and 553
         Given non-negative integer N, return largest number in family of N
@@ -73,7 +75,7 @@ export const leetcodeContent = [
         
         N is integer in range [0..2,147,483,647]
         `,
-        solution: `
+    solution: `
         function solution(N) {
             // write your code in JavaScript (Node.js 8.9.4)
         
@@ -90,15 +92,19 @@ export const leetcodeContent = [
             );
         }
         `,
-        cardContentArray: [
-            { content: `The largest sibling (number) for every family of N will always be the largest single-digit integers comprising it arranged in order of greatest to least and then concatenated.` },
-            { content: `Time Complexity: at worst, O(n log n) for the sort function.` }
-        ]
-    },
-    {
-        problem: "1710. Maximum Units on a Truck (Easy)",
-        href: "maximum-units-on-a-truck",
-        description: `
+    cardContentArray: [
+      {
+        content: `The largest sibling (number) for every family of N will always be the largest single-digit integers comprising it arranged in order of greatest to least and then concatenated.`,
+      },
+      {
+        content: `Time Complexity: at worst, O(n log n) for the sort function.`,
+      },
+    ],
+  },
+  {
+    problem: "1710. Maximum Units on a Truck (Easy)",
+    href: "maximum-units-on-a-truck",
+    description: `
         Example 1:
 
         Input: boxTypes = [[1,3],[2,2],[3,1]], truckSize = 4
@@ -121,7 +127,7 @@ export const leetcodeContent = [
         1 <= numberOfBoxesi, numberOfUnitsPerBoxi <= 1000
         1 <= truckSize <= 106
         `,
-        solution: `
+    solution: `
         /**
          * @param {number[][]} boxTypes
          * @param {number} truckSize
@@ -145,14 +151,17 @@ export const leetcodeContent = [
             
         };
         `,
-        cardContentArray: [
-            { content: "Time Complexity: O(n log n) for the sort function, O(n) for the for loop, O(n) overall" }
-        ]
-    },
-    {
-        problem: "20. Valid Parentheses (Easy)",
-        descriptionLabel: "Description:",
-        description: `
+    cardContentArray: [
+      {
+        content:
+          "Time Complexity: O(n log n) for the sort function, O(n) for the for loop, O(n) overall",
+      },
+    ],
+  },
+  {
+    problem: "20. Valid Parentheses (Easy)",
+    descriptionLabel: "Description:",
+    description: `
         Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
         An input string is valid if:
@@ -188,8 +197,8 @@ export const leetcodeContent = [
         1 <= s.length <= 104
         s consists of parentheses only '()[]{}'.
         `,
-        solutionLabel: "Solution:",
-        solution: `
+    solutionLabel: "Solution:",
+    solution: `
         /**
             * @param {string} s
             * @return {boolean}
@@ -226,8 +235,11 @@ export const leetcodeContent = [
             return tempArray.length === 0 ? flag : false;
         };
         `,
-        cardContentArray: [
-            { content: "Time Complexity: at worst, O(n^2) because of the switch statement inside of the for loop" }
-        ]
-    },
-]
+    cardContentArray: [
+      {
+        content:
+          "Time Complexity: at worst, O(n^2) because of the switch statement inside of the for loop",
+      },
+    ],
+  },
+];
